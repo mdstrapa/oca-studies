@@ -1,4 +1,4 @@
-package marcosoft.dependency;
+package marcosoft.oca.depen;
 
 public class SomeDependency{
 	

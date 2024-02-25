@@ -1,8 +1,8 @@
-package com.marcosoft.oca.program.application;
+package marcosoft.oca;
 
-import com.marcosoft.oca.program.model.Guitar;
+import marcosoft.oca.Guitar;
 
-import marcosoft.dependency.Somedependency;
+import marcosoft.oca.depen.SomeDependency;
 
 public class App{
 	public static void main(String[] args){
@@ -12,7 +12,7 @@ public class App{
 
 		myGuitar.play();
 
-		Somedependency myDependency = new Somedependency();
+		SomeDependency myDependency = new SomeDependency();
 
 		myDependency.doSomething();
 

@@ -1,4 +1,4 @@
-package com.marcosoft.oca.program.model;
+package marcosoft.oca;
 
 public class Guitar{
 	public void play(){

@@ -1,0 +1,12 @@
+Commands that have worked:
+
+
+to compile:
+
+javac -d program/target/classes -cp "depen/target/classes/" program/src/marcosoft/oca/* 
+
+
+
+to execute:
+
+java -cp "program/target/classes:depen/target/classes" marcosoft.oca.App
