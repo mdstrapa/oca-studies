@@ -3,10 +3,29 @@ Commands that have worked:
 
 to compile:
 
+//with class dependency only
 javac -d program/target/classes -cp "depen/target/classes/" program/src/marcosoft/oca/* 
+
+//with jar dependency added
+javac -d "program/target/classes" -cp "depen/target/classes:depenjar/target/DepenJar.jar" program/src/marcosoft/oca/*
+
 
 
 
 to execute:
 
+//with class dependency only
 java -cp "program/target/classes:depen/target/classes" marcosoft.oca.App
+
+//with jar dependency added
+java -cp "depen/target/classes:depenjar/target/DepenJar.jar:program/target/classes" marcosoft.oca.App
+
+
+
+
+
+to create a jar file:
+
+jar cfe DepenJar.jar marcosoft.oca.depenjar.DepenJar marcosoft/oca/depenjar/*
+
+OBS: the jar starging point class must match the folder path to the class
