@@ -54,6 +54,31 @@ public class SwitchLab{
 			
 		}
 
+
+		System.out.println("Using the new -> syntax after Java 17:");
+
+		switch (myVar) {
+			case 1,2,5 -> System.out.println("The number is small");
+			case 10,11,56 -> System.out.println("The number is big");
+		}
+
+
+		System.out.println("Switch exoression:");
+
+		byte number = 17;
+
+		var greeting = switch(number){
+			case 1,2,5 -> "Good day!";
+			case 12,17,18,19 -> {
+				var str1 = "Hello";
+				var str2 = "World";
+				yield str1 + " " + str2;
+			}
+			default -> "Good night";
+		};
+
+		System.out.println("The greetings is " + greeting);
+
 	}
 
 }
